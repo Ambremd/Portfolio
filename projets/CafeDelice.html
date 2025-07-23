@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="../image/png" href="../img/logo.png">
+    <link rel="stylesheet" type="text/css" href="CafeDelice.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../moi.html">À propos</a></li>
+                <li><a href="../projet.html">Projets</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav">
+            <a href="#" id="close-menu" class="close-btn">&times;</a>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../moi.html">À propos</a></li>
+                <li><a href="../projet.html">Projets</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banniere">
+        <a href="https://ambre-mercier-dalmasso.mds-grenoble.yt/cafedelice/index.php/accueil/" target="_blank" class="banniere-link">
+            <div class="conteneur-banniere">
+                <img src="../img/page projet/2.png" alt="photo pour banniere" class="banniere-image">
+            </div>
+        </a>
+    </section>
+
+    <section class="projet">
+        <p class="info"><a href="../projet.html">Wordpress</a> - projet de cours</p>
+        <h1>Développement d’un site à partir d’une maquette sur un Coffee Shop : Café Délice</h1>
+    
+        <div class="contenu">
+            <div class="texte">
+                <h2>Contexte</h2>
+                <ul>
+                    <li>Projet réalisé en solo dans le cadre d’un exercice noté en 2ᵉ année de Bachelor Web & Multimédia</li>
+                    <li>Durée : 1 mois</li>
+                    <li>Objectifs : Réaliser le site de notre choix à partir d'une maquette personnalisée conçue avec l'aide du formateur.</li>
+                    <li>Contrainte : Créer une maquette, puis l'intégrer dans WordPress en utilisant un thème enfant, en respectant des critères d’évaluation comme la fidélité à la maquette, la propreté du code, l’utilisation de champs ACF, et la personnalisation via PHP.</li>
+                </ul>
+    
+                <h2>Problématique</h2>
+                <p>Comment transformer une maquette graphique en un site fonctionnel avec WordPress en utilisant un thème enfant, tout en respectant la fidélité à la maquette et en exploitant les fonctionnalités dynamiques offertes par WordPress ?</p>
+    
+                <div class="media">
+                    <div class="media-item">
+                        <img src="../img/page projet/Maquette cafe delice.png" alt="Maquette réalisée pour le projet">
+                        <p>Maquette réalisée pour le projet</p>
+                    </div>
+                </div>
+    
+                <h2>Méthodologie et outils utilisés</h2>
+                <ul>
+                    <li>Création de la maquette avec Figma en suivant les consignes du brief.</li>
+                    <li>Suivi des étapes : création du thème enfant, intégration HTML/CSS/PHP, utilisation des plugins WordPress.</li>
+                    <li>Profiter des heures de cours pour anticiper les difficultés techniques.</li>
+                </ul>
+    
+                <h2>Outils utilisés</h2>
+                <ul>
+                    <li>Visual Studio Code pour l'écriture du code.</li>
+                    <li>WAMP pour la gestion du serveur local.</li>
+                    <li>WordPress pour l'intégration.</li>
+                    <li>FileZilla pour la liaison entre le site local et le serveur distant.</li>
+                    <li>Figma pour la réalisation de la maquette.</li>
+                </ul>
+    
+                <h2>Langages utilisés</h2>
+                <ul>
+                    <li><div class="icone">
+                        <h4>HTML</h4>
+                        <img src="../icone/Html.png" alt="HTML">
+                    </div></li>
+                    <li><div class="icone">
+                        <h4>CSS</h4>
+                        <img src="../icone/CSS 3.png" alt="CSS">
+                    </div></li>
+                    <li><div class="icone">
+                        <h4>PHP</h4>
+                        <img src="../icone/PHP programming language.png" alt="PHP">
+                    </div></li>
+                </ul>
+                
+                
+                
+                <div class="code">
+
+                    <div>
+                        <p>Code HTML avec PHP lié à WordPress afin d'intégrer les images et textes directement dans le CMS.</p>
+                        <pre>
+&lt;div class="carte"&gt;
+    &lt;h2&gt;&lt;?php the_field("nom_cafe"); ?&gt;&lt;/h2&gt;
+    &lt;h3&gt;&lt;?php the_field("titre_1"); ?&gt;&lt;/h3&gt;
+    &lt;div class="aliment"&gt;
+        &lt;div class="boisson"&gt;
+            &lt;img src=&lt;?php the_field("icone_1"); ?&gt; alt="icone tasse à café"&gt;
+            &lt;p&gt;&lt;?php the_field("nom_1"); ?&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="boisson"&gt;
+            &lt;img src=&lt;?php the_field("icone_2"); ?&gt; alt="icone boisson chaude"&gt;
+            &lt;p&gt;&lt;?php the_field("nom_2"); ?&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="boisson"&gt;
+            &lt;img src=&lt;?php the_field("icone_3"); ?&gt; alt="icone boisson froide"&gt;
+            &lt;p&gt;&lt;?php the_field("nom_3"); ?&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="boisson"&gt;
+            &lt;img src=&lt;?php the_field("icone_4"); ?&gt; alt="icone alcool"&gt;
+            &lt;p&gt;&lt;?php the_field("nom_4"); ?&gt;&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="boisson"&gt;
+            &lt;img src=&lt;?php the_field("icone_5"); ?&gt; alt="icone gâteaux"&gt;
+            &lt;p&gt;&lt;?php the_field("nom_5"); ?&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                
+                    <div>
+                        <p>Récupérer les éléments réalisés dans WordPress et les intégrer dans la page (header, pied de page, bloc créé depuis WordPress).</p>
+                        <pre>
+&lt;?php get_header(); ?&gt;
+
+&lt;?php the_content(); ?&gt;
+
+&lt;?php get_footer(); ?&gt;
+                        </pre>
+                    </div>
+                
+    
+                <h2>Compétences mobilisées</h2>
+                <ul>
+                    <li>Hard skills :</li>
+                    <ul>
+                        <li>Intégration web</li>
+                        <li>Création de thème enfant</li>
+                        <li>Utilisation des champs ACF</li>
+                        <li>Personnalisation via PHP</li>
+                    </ul>
+                    <li>Soft skills :</li>
+                    <ul>
+                        <li>Autonomie</li>
+                        <li>Gestion du temps</li>
+                        <li>Rigueur</li>
+                    </ul>
+                </ul>
+    
+                <div class="resultats">
+                    <div class="resultat-gauche">
+                        <h2>Résultats obtenus</h2>
+                        <p>Site fidèle à la maquette initiale avec des fonctionnalités dynamiques grâce à ACF.</p>
+                        <p>Note obtenue : 15,5 pour la maquette et 17 pour l'intégration WordPress.</p>
+                        <p>Ce projet m’a permis de découvrir la création de thème enfant, l’utilisation de champs ACF et l’exploitation de PHP pour personnaliser les contenus dynamiques. Il m’a également permis de mieux comprendre les possibilités de personnalisation offertes par WordPress.</p>
+    
+                        <h3>Axes d’amélioration</h3>
+                        <ul>
+                            <li>Approfondir la personnalisation des templates avec PHP.</li>
+                            <li>Utilisation plus poussée des champs ACF pour dynamiser davantage le contenu.</li>
+                        </ul>
+    
+                        <h3>Avis du formateur</h3>
+                        <blockquote>"Une excellente intégration fidèle à la maquette. Il suffirait de quelques ajustements mineurs pour proposer ce site dans le cadre d’une commande client payante. Merci pour votre participation active, c’est un module difficile qui demande un gros investissement, bravo !" <br>— Cédric COUSTELLIE, Formateur WordPress</blockquote>
+                    </div>
+    
+                    <div class="resultat-droite">
+                        <img src="../img/page projet/Capture filzila.PNG" alt="dossier thème enfant">
+                        <p>Thème enfant dans FileZilla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="buttons">
+        <a href="https://ambre-mercier-dalmasso.mds-grenoble.yt/cafedelice/index.php/accueil/" class="btn site" target="_blank">Site</a>
+        <a href="https://www.figma.com/design/I1LIfXu4JmBeYXYRWI1NH6/Untitled?node-id=0-1&t=FaarywQApMHlYDdT-1" class="btn github" target="_blank">Figma</a>
+    </div>
+
+    <section class="footer">
+        <footer>
+            <img src="../img/Logo-blanc-complet.png" alt="Logo AMD" class="logo-footer">
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../moi.html">À propos de moi</a></li>
+                    <li><a href="../projet.html">Mes projets</a></li>
+                    <li><a href="../contact.html">Me contacter</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <span>Suivez-moi</span>
+                <div>
+                    <a href="https://github.com/Ambremd" target="_blank"><img  src="../icone/github-blanc.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ambermercier-dalmasso" target="_blank"><img  src="../icone/linkedin-blanc.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+    
+    <script defer src="../script.js"></script>
+</body>
+</html>

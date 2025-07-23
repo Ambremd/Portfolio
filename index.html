@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css" href="header.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="img/Logo.png" alt="Logo">
+            </a>        
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./moi.html">À propos</a></li>
+                <li><a href="./projet.html">Projets</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav">
+            <a href="#" id="close-menu" class="close-btn">&times;</a>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./moi.html">À propos</a></li>
+                <li><a href="./projet.html">Projets</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section class="banniere" id="accueil">
+        <div class="conteneur-banniere">
+            
+            <div class="banniere-texte">
+                <p>Je suis </p>
+                <h1>Ambre MERCIER--DALMASSO</h1>
+                <p>Développeuse web</p>
+            </div>
+            <img src="img/bulle.png" alt="photo pour banniere" class="banniere-image"> 
+        </div>
+    </section>
+
+    <section class="a-propos" id="apropos">
+        <h2>A PROPOS</h2>
+        <div class="cartes-container">
+            <!-- <button class="arrow left-arrow">&#10094;</button> -->
+            <div class="cartes">
+                <div class="carte left">
+                    <div class="contenu">
+                        <h3>Parcours</h3>
+                        <strong>Académique :</strong>
+                        <li>Lycée de Vizille <br> - BAC général option NSI et AMC</li>
+                        <li>My Digital School <br> - Bachelors cycle web et multimédia</li>
+                        <br>
+                        <strong>Professionnelles :</strong>
+                        <li> Stage chez “Univers Zéphyr” </li>
+                        <li> Stage chez “Studio Studieux”</li>
+                        <li> Employé chez A2S nettoyage et services & Wellness coffee shop</li> 
+                        <a href="moi.html#parcour">
+                            <button>En Savoir Plus</button>
+                        </a>
+                    </div>
+                </div>
+        
+                <div class="carte carte-centre center">
+                    <div class="contenu">
+                        <h3>Moi</h3>
+                        <p>Bonjour ! Je m'appelle Ambre MERCIER--DALMASSO, étudiant en développement web, je suis passionnée par la création de sites. Actuellement en 2ème année d’un Bachelor web et multimédia, à My Digital School Grenoble, j'ai acquis des compétences solides en développement front, développement back et en base de données ainsi que Wordpress. 
+                            Ce que j'apprécie le plus dans ce domaine, c'est de transformer des idées en expériences accessibles et captivantes.</p>
+                            <a href="moi.html">
+                                <button>En Savoir Plus</button>
+                            </a>
+                    </div>
+                </div>
+        
+                <div class="carte right">
+                    <div class="contenu">
+                        <h3>Compétences</h3>
+                        <strong>Hard Skills :</strong> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript Vanilla</li>
+                        <li>WordPress</li>
+                        <br>
+                        <strong>Soft Skills :</strong> 
+                        <li>Méthodique</li>
+                        <li>Organisée</li>
+                        <li>Adaptabilité</li>
+                        <li>Capacité d’écoute</li>
+                        <a href="moi.html#competence">
+                            <button>En Savoir Plus</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="arrow right-arrow">&#10095;</button> -->
+        </div>
+    </section>
+
+    <section class="mes_projets" id="projet">
+        <h2>Mes projets</h2>
+        <div class="projets-container">
+            <div class="projets">
+
+                <div class="projet">
+                    <div class="element">
+                        <img src="img/1.png" alt="mockup projet vatanem" class="projet-image">
+                        <h3>Vatanem</h3>
+                    </div>
+                </div>
+
+                <div class="projet">
+                    <div class="element">
+                        <img src="img/2.png" alt="mockup projet to travel is to live" class="projet-image">
+                        <h3>To travel is to live</h3>
+                    </div>
+                </div>
+
+                <div class="projet">
+                    <div class="element">
+                        <img src="img/3.png" alt="mockup projet café délice" class="projet-image">
+                        <h3>Café Délice</h3>
+                    </div>
+                </div>
+
+                <!-- <button class="arrow right-arrow">&#10095;</button> -->
+            </div>
+        </div>
+        <a href="projet.html"><button>Tous voir</button></a>
+        
+    </section>
+    
+    <section class="mes_avis">
+        <h2>Avis</h2>
+        <div class="avis-container">
+            <div class="avis">
+                <div class="avi">
+                    <div class="text">
+                        <p class="p1">“ Ambre est très impliquée dans les enseignements de développement informatique et de développement web en générale. Elle va au bout des choses et sait se rendre utile pour le reste du groupe. “</p>
+                        <h3>Thomas LAFORGE</h3>
+                        <P class="p2">Enseignant formateur</P>
+                    </div>
+                </div>
+            </div>
+            <div class="avis">
+                <div class="avi">
+                    <div class="text">
+                        <p class="p1">“ Côté savoir-faire, Ambre a des compétences réelles, solides.  
+                            Ses réalisations sont toujours très bonnes.  
+                            Elle cherche toujours à faire bien, elle est fiable.  
+                            Elle est aussi flexible : elle sait remettre en question les éléments de son travail à 
+                            peaufiner. 
+                            Ambre a su faire preuve de polyvalence et comprend bien les contextes dans 
+                            lesquels elle doit faire les choses.   “</p>
+                        <h3>Myriam CORNU NAVE</h3>
+                        <P class="p2">Référente de stage</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container_recommandation">
+            <div class="recommandation">
+                <h2>Lettre de recommandation</h2>
+                <div class="bouton">
+                    <a href="asset/Lettre de recommandation Ambre.pdf" download="lettre_de_recommandation_Ambre.pdf" target="_blank">Accéder</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+    
+    <section class="contact">
+        <h2 class="contact-small">Contact</h2>
+
+        <div class="contact-container">
+                <a href="tel:+33612345678" class="contact-link">
+                    <div class="contact-box telephone">
+                        <img src="icone/telephone-blanc.png" alt="Téléphone">
+                        <p>Téléphone : 07.77.46.40.65</p>
+                    </div>
+                </a>
+
+                <h2 class="contact-big">Contact</h2>
+        
+                <a href="mailto:amber.mercierdalmasso@example.com" class="contact-link">
+                    <div class="contact-box mail">
+                        <img src="icone/mail-noir.png" alt="Mail">
+                        <p>Mail : ambermercierdalmasso@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Ambremd" target="_blank" class="contact-link">
+                    <div class="contact-box github">
+                        <img src="icone/github-noir.png" alt="GitHub">
+                        <p>GitHub : github.com/Ambermd</p>
+                    </div>
+                </a>
+        
+                <a href="https://www.linkedin.com/in/ambermercier-dalmasso" target="_blank" class="contact-link">
+                    <div class="contact-box linkedin">
+                        <img src="icone/linkedin-noir.png" alt="LinkedIn">
+                        <p>LinkedIn : www.linkedin.com/in/ambermercier-dalmasso</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <footer>
+            <img src="./img/Logo-blanc-complet.png" alt="Logo AMD" class="logo-footer">
+            
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./moi.html">À propos de moi</a></li>
+                    <li><a href="./projet.html">Mes projets</a></li>
+                    <li><a href="./contact.html">Me contacter</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <span>Suivez-moi</span>
+                <div>
+                    <a href="https://github.com/Ambremd" target="_blank"><img  src="icone/github-blanc.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ambermercier-dalmasso" target="_blank"><img  src="icone/linkedin-blanc.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

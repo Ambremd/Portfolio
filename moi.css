@@ -1,0 +1,509 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoL';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoB';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bruno Ace';
+    src: url('fonts/BrunoAce-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+h1 h2{
+    font-family: 'Bruno Ace';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links li a:hover {
+    color: #7089BD;
+}
+
+/* Menu burger */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.burger-menu span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Mobile Menu */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #FFE5B3;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease-in-out;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav ul li {
+    margin: 20px 0;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mobile-nav ul li a:hover {
+    color: #7089BD;
+}
+
+/* Bouton de fermeture */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Affichage du menu burger sur mobile */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+}
+
+/* Menu actif */
+.mobile-nav.active {
+    right: 0;
+}
+
+
+/* pk moi */      /* pk moi */      /* pk moi */
+
+
+h1 {
+    font-family: 'Bruno Ace', sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.Pourquoi_moi {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFE5B3;
+}
+
+.container_moi {
+    display: flex;
+    flex-direction: row;
+    margin: 0 7vh 3vh 7vh;
+}
+
+.a_propos{
+    width: 60%;
+}
+
+.moi_text {
+    background: transparent;
+    margin-left: 7%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.moi_text p {
+    margin-bottom: 15px;
+}
+
+.moi_text ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.moi_text ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Image présentation */
+.moi_image {
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    width: 40%;
+    margin-top: 2%;
+}
+
+.moi_image img {
+    width: 70%;
+    max-height: 500px;
+    height: auto; 
+    object-fit: contain; 
+}
+
+@media (max-width: 1100px) {
+    .container_moi {
+        flex-direction: column;
+        align-items: center; 
+        text-align: left; 
+    }
+
+    .a_propos {
+        width: 90%; 
+    }
+
+    .moi_image {
+        width: 50%; 
+        margin-top: 20px; 
+        margin-bottom: 20px; 
+        display: flex;
+        justify-content: center;
+    }
+
+    .moi_image img {
+        width: 100%; 
+    }
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem; 
+        text-align: left;
+    }
+
+    .moi_text {
+        font-size: 0.8rem;
+    }
+
+    .moi_image {
+        width: 80%; 
+    }
+}
+
+
+/* Compétence  */      /* Compétence */      /* Compétence */
+
+
+.competence {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.container_competence {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.hard_skill, .soft_skill {
+    width: 35%;
+    background-color: #FFE5B3;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 450px;
+    height: auto;
+}
+
+.hard_skill{
+    padding-bottom: 2%;
+}
+
+h2{
+    font-family: 'Bruno Ace', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 4%;
+
+}
+
+.hard_skill h3, .soft_skill h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Bruno Ace', sans-serif;
+}
+
+.mes_compétence_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.mes_compétence {
+    display: flex;
+    align-items: center;
+    width: 45%;
+
+}
+
+.hard_skill .mes_compétence{
+    margin-top: 5%;
+}
+
+.mes_compétence:last-child {
+    align-self: flex-start;
+}
+
+.text_competence {
+    margin: 0;
+}
+
+.mes_compétence img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.mes_compétence_text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0;
+}
+
+.text_competence p {
+    margin: 0;
+}
+
+
+@media (max-width: 990px) {
+    .container_competence {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hard_skill, .soft_skill {
+        width: 80%;
+    }
+
+    .hard_skill{
+        padding-bottom: 4%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mes_compétence {
+        width: 100%; 
+    }
+}
+
+
+/* Compétence  */      /* Compétence */      /* Compétence */
+
+.etude_diplome{
+    /* display: flex;
+    justify-content: space-around; */
+    margin-top: 2%;
+}
+
+.etude{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Parcour  */      /* Parcour */      /* Parcour */
+
+
+.parcours_professionnel{
+    /* display: flex;
+    justify-content: space-around; */
+    margin-top: 2%;
+}
+
+.parcours{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* info  */      /* info */      /* info */
+
+.container_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 3%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.container_info a{
+    text-decoration: none;
+}
+
+.container_info h2 {
+    font-size: 1.8rem;
+    font-family: 'Bruno Ace', sans-serif;
+    margin-bottom: 15px;
+}
+
+.container_info p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.container_info a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.CV, .lien_github, .me_contacter {
+    width: 30%;
+    min-width: 200px; /* Assure un bon affichage sur mobile */
+}
+
+.bouton {
+    background-color: #DAA652;
+    width: 60%;
+    padding: 15px 7px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 0 auto; /* Centre le bouton */
+}
+
+.bouton:hover {
+    background-color: #FFE5B3;
+}
+
+/* Responsive : Ajustement pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .container_info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .CV, .lien_github, .me_contacter {
+        width: 80%;
+    }
+
+    .bouton {
+        width: 80%;
+    }
+}
+
+
+
+/* footer  */      /* footer */      /* footer */
+
+
+footer {
+    background-color: #2A3161;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 50vh;
+}
+
+.logo-footer {
+    height: 20vh;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media span {
+    font-size: 1.2rem; 
+    font-weight: bold;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}

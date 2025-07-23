@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoL';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoB';
+    src: url('fonts/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bruno Ace';
+    src: url('fonts/BrunoAce-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links li a:hover {
+    color: #7089BD;
+}
+
+/* Menu burger */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.burger-menu span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Mobile Menu */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #FFE5B3;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.4s ease-in-out;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav ul li {
+    margin: 20px 0;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.mobile-nav ul li a:hover {
+    color: #7089BD;
+}
+
+/* Bouton de fermeture */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    color: black;
+    text-decoration: none;
+}
+
+/* Affichage du menu burger sur mobile */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+}
+
+/* Menu actif */
+.mobile-nav.active {
+    right: 0;
+}
+
+.avertissement {
+    /* background-color: #ffe5b3; */
+    background-color: rgba(255, 229, 179, 0.4);
+    border-left: 4px solid #007BFF;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    /* margin-bottom: 40px; */
+    margin: 0px 60px 40px 60px;
+    font-style: italic;
+}
+
+/* mes projets */     /* mes projets */       /* mes projets */ 
+
+
+/* Styles généraux */
+.projets {
+    width: 95%;
+    padding: 2vw;
+    text-align: center;
+}
+
+.container_projet {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titres */
+h1, h2, a {
+    font-family: 'Bruno Ace', sans-serif;
+}
+
+h1 {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+
+h2 {
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+    text-align: center;
+}
+
+/* Paragraphe */
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+}
+
+.type{
+    font-style: italic;
+    font-size: 1vw;
+}
+
+/* Liste des projets */
+.list_projet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    justify-content: center;
+}
+
+/* Cartes des projets */
+.list_projet > div {
+    width: 25%; /* Chaque projet prend environ 30% de la largeur */
+    background-color: #f8f8f8;
+    padding: 1.5vw;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.list_projet img {
+    width: 100%;
+    border-radius: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+/* Liens */
+.list_projet a {
+    font-style: italic;
+    font-size: 0.6vw;
+    display: block;
+    margin: 1vw 0;
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.list_projet a:hover {
+    color: #007BFF;
+}
+
+.list_projet > div:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* Navigation */
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2vw;
+}
+
+.menu li {
+    font-family: 'Bruno Ace', sans-serif;
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding: 0.5vw 1vw;
+    border-radius: 0.5vw;
+    transition: background 0.3s;
+}
+
+.menu li:hover {
+    background-color: #ddd;
+}
+
+.menu li.active {
+    font-weight: bold;
+    color: #DAA652;
+    border-bottom: 2px solid #FAC673;
+    cursor: default;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .list_projet > div {
+        width: 45%; /* Sur tablette, 2 projets par ligne */
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    p, .list_projet a {
+        font-size: 1.5vw;
+    }
+    .type{
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .list_projet > div {
+        width: 90%; /* Sur mobile, 1 projet par ligne */
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        gap: 1vw;
+    }
+
+    .menu li {
+        font-size: 3vw;
+    }
+
+    p, .list_projet a, .type {
+        font-size: 2.1vw;
+    }
+}
+
+
+/* footer  */      /* footer */      /* footer */
+
+
+footer {
+    background-color: #2A3161;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 50vh;
+}
+
+footer a{
+    font-family: "Roboto";
+}
+
+.logo-footer {
+    height: 20vh;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 5px;
+}
+
+.social-media span {
+    font-size: 1.2rem; 
+    font-weight: bold;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}

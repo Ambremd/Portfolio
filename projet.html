@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" type="text/css" href="projet.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="img/Logo.png" alt="Logo">
+            </a>        
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./moi.html">À propos</a></li>
+                <li><a href="./projet.html">Projets</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav">
+            <a href="#" id="close-menu" class="close-btn">&times;</a>
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./moi.html">À propos</a></li>
+                <li><a href="./projet.html">Projets</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projets">
+        <div class="container_projet">
+            <h1>Mes projets</h1>
+            <div class="mes_projets">
+                <nav class="menu">
+                    <ul>
+                        <li data-filter="all">Tout</li>
+                        <li data-filter="projet1">HTML & CSS</li>
+                        <li data-filter="projet2">JavaScript & JSX</li>
+                        <li data-filter="projet3">WordPress</li>
+                    </ul>
+                </nav>
+
+                <p class="avertissement">
+                    ⚠️ Cette page présente les informations principales de chacun de mes projets. Pour le moment, seuls les projets dont le titre est en bleu permettent d’accéder à plus de détails.
+                </p>
+
+                <div class="list_projet">
+                    <div class="projet3">
+                        <h2>Benoit Nave</h2>
+                        <img src="img/15.png" alt="Mockup du site">
+                        <a href="https://benoitnave.com/" target="_blank">https://benoitnave.com/</a>
+                        <p class="type">Wordpress</p>
+                        <p>📝 Description<br>
+                            Projet réalisé lors de mon stage de 2ème année chez Univers Zéphyr. L'objectif était de réaliser un site présentant les différentes activités professionnelles Benoit Nave en collaboration avec une UI/UX Designeuse.                             <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            - Reproduction de la maquette<br>
+                            - Recherche et mise en place d'extension<br>
+                            - Collaboration</p>
+                    </div>
+                    
+                    <div class="projet3">
+                        <h2>Carnet de Montagnes</h2>
+                        <img src="img/13.png" alt="Mockup du site">
+                        <a href="https://carnetdemontagnes.fr/" target="_blank">https://carnetdemontagnes.fr/</a>
+                        <p class="type">Wordpress</p>
+                        <p>📝 Description<br>
+                            Projet réalisé dans le cadre du fil rouge, client réel, en 2ème année. Carnet de montagne est une exposition itinérente de montagne, se site permet de présenter, louer et contacter.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Collaboration avec un client réel<br>
+                            -Reproduction la maquette adapté à la cible<br>
+                            -Optimisation de l’expérience utilisateur</p>
+                    </div>
+
+                    <div class="projet2">
+                        <h2>Tp final JSX</h2>
+                        <img src="img/14.png" alt="Mockup du site">
+                        <a href="https://tp-final-b2.vercel.app/" target="_blank">https://tp-final-b2.vercel.app/</a>
+                        <p class="type">JSX</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement Front en 2ème année. L’objectif était de mettre en pratique les élément appris au cours de l'année, notament le JSX.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Utilisation des hooks React<br>
+                            -Gestion des états avec useState<br>
+                            -Rendu conditionnel</p>
+                    </div>
+
+                    <div class="projet2">
+                        <h2>Saisie d'adresse</h2>
+                        <img src="img/12.png" alt="Mockup du site">
+                        <a href="https://formulaire-saisie-adresse.vercel.app/" target="_blank">https://formulaire-saisie-adresse.vercel.app/</a>
+                        <p class="type">JS</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement Front en 2ème année. L’objectif était d’intégrer une API gouvernementale permettant de rechercher et sélectionner une adresse en temps réel.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Consommation d’API externe<br>
+                            -Concaténation et parcourir la donnée<br>
+                            -Affichage absolute relative</p>
+                    </div>
+
+                    <div class="projet2"><a href="./projets/convertisseur.html">
+                        <h2>Convertisseur</h2>
+                        <img src="img/11.png" alt="Mockup du site">
+                        <a href="https://convertisseur-jsx.vercel.app/" target="_blank">https://convertisseur-jsx.vercel.app/</a>
+                        <p class="type">JS/JSX</p>
+                        <p>📝Description<br>
+                            Projet réalisé en cours de Développement Front en 2ème année. L’objectif était de créer une petite application qui convertit des prix en euros vers des dollars avec des interactions dynamiques.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Manipulation des événements utilisateurs<br>
+                            -Gestion des affichages conditionnels<br>
+                            -Réalisation du projet en JS puis en JSX</p>
+                    </a></div>
+
+                    <div class="projet3"><a href="./projets/CafeDelice.html">
+                        <h2>Café Délice</h2>
+                        <img src="img/3.png" alt="Mockup du site">
+                        <a href="https://ambre-mercier-dalmasso.mds-grenoble.yt/cafedelice/index.php/accueil/" target="_blank">https://ambre-mercier-dalmasso.mds-grenoble.yt/cafedelice/index.php/accueil/</a>
+                        <p class="type">Wordpress</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement WordPress en 2ème année. L’objectif était de concevoir un site avec un thèmes personnalisé afin de faire du code pur.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Développement avec WordPress<br>
+                            -Personnalisation du thème<br>
+                            -Optimisation de la navigation</p>
+                    </a></div>
+                    
+                    
+                    <div class="projet1"><a href="./projets/vatanen.html">
+                        <h2>Vatanen</h2>
+                        <img src="img/1.png" alt="Mockup du site">
+                        <a href="https://ambremd.github.io/maquette-B2-Ambre/index.html" target="_blank">https://ambremd.github.io/maquette-B2-Ambre/index.html</a>
+                        <p class="type">HTML/CSS/LESS</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours d’Intégration Web en 2ème année. L’objectif était de reproduire une maquette tout en respectant les principes du responsive design.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Intégration fidèle à la maquette<br>
+                            -Design responsive<br>
+                            -Utilisation de SASS</p>
+                    </a></div>
+
+                    <div class="projet1">
+                        <h2>to travel is to life</h2>
+                        <img src="img/2.png" alt="Mockup du site">
+                        <a href="https://ambremd.github.io/maquette-cours/" target="_blank">https://ambremd.github.io/maquette-cours/</a>
+                        <p class="type">HTML/CSS</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours d’Intégration Web en 1ère et 2ème année. L'objectif principal était de mettre en pratique ce qu'on a appris sur les deux premières années de bachelors
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Fidélité à la maquette<br>
+                            -Intégration uniquement en HTML & CSS<br>
+                            -Design responsive
+                            </p>
+                    </div>
+
+                    <div class="projet1" class="projet2">
+                        <h2>Lately</h2>
+                        <img src="img/5.png" alt="Mockup du site">
+                        <a href="https://ambremd.github.io/stage-lately/" target="_blank">https://ambremd.github.io/stage-lately/</a>
+                        <p class="type">HTML/CSS/JavaScript</p>
+                        <p>📝 Description<br>
+                            Projet réalisé lors de mon stage de 1ère année chez Studio Studieux. L’objectif était de concevoir un site vitrine pour une application permettant aux BDE et associations étudiantes de gérer des événements.
+                            <br><br>
+                            🎯 Objectifs du projet<br>
+                            
+                            -Veille concurrentielle<br>
+                            -Validation client<br>
+                            -Intégration responsive avec animations</p>
+                    </div>
+
+                    <div class="projet1">
+                        <h2>Safe</h2>
+                        <img src="img/10.png" alt="Mockup du site">
+                        <a href="http://safe.fabien-maillard.mds-grenoble.yt/" target="_blank">http://safe.fabien-maillard.mds-grenoble.yt/</a>
+                        <p class="type">HTML/CSS/PHP</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement Front en 2ème année. L’objectif était de reprendre ce qu'avait fait les 2ème année et de l'améliorer avec les connaissances aquise au cours de l'année
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -intégration HTML, CSS et PHP <br>
+                            -Gestion des événements<br>
+                            <br><br>
+                            ⚠️ Le projet n'est pas responsive</p>
+                    </div>
+
+                    <div class="projet2">
+                        <h2>Dactylographe</h2>
+                        <img src="img/9.png" alt="Mockup du site">
+                        <a href="https://js-dactylo.vercel.app/" target="_blank">https://js-dactylo.vercel.app/</a>
+                        <p class="type">JavaScript</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement Front en 1ère année. Ce jeu permet d’améliorer la vitesse de frappe au clavier avec un système de score.
+                            <br>
+                            🎯 Objectifs du projet
+                            <br><br>
+                            -Manipulation des événements clavier<br>
+                            -Calcul des statistiques (MPM + précision)<br>
+                            -Stockage des meilleurs scores</p>
+                    </div>
+
+                    <div class="projet2">
+                        <h2>Memory</h2>
+                        <img src="img/8.png" alt="Mockup du site">
+                        <a href="https://ambremd.github.io/JS-Memory/" target="_blank">https://ambremd.github.io/JS-Memory/</a>
+                        <p class="type">JavaScript</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement Front en 1ère année. L’objectif était de créer un jeu interactif où l’utilisateur doit retrouver des paires de cartes.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Manipulation du DOM<br>
+                            -Gestion des événements utilisateurs<br>
+                            -Stockage des scores dans le localStorage</p>
+                    </div>
+
+                    <div class="projet2">
+                        <h2>Cible</h2>
+                        <img src="img/7.png" alt="Mockup du site">
+                        <a href="https://ambremd.github.io/JS-cible/" target="_blank">https://ambremd.github.io/JS-cible/</a>
+                        <p class="type">JavaScript</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement Front en 1ère année. L’objectif était de créer un mini-jeu de rapidité en utilisant les API Web.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Gestion des événements<br>
+                            -Apparition aléatoire des divs<br>
+                            -Stockage des meilleurs scores</p>
+                    </div>
+
+                    <div class="projet3">
+                        <h2>Un rêve éveillé</h2>
+                        <img src="img/4.png" alt="Mockup du site">
+                        <a href="https://ambre-mercier-dalmasso.mds-grenoble.yt/" target="_blank">https://ambre-mercier-dalmasso.mds-grenoble.yt/</a>
+                        <p class="type">Wordpress</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours de Développement WordPress en 1ème année. Ce site immersif propose une expérience visuelle et narrative autour de voyage et l'automobile.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Création sous WordPress<br>
+                            -Utilisation d'elementor<br>
+                            -utilisation d'extension comme ninja form</p>
+                    </div>
+
+                    <div class="projet1">
+                        <h2>The great Outdoor</h2>
+                        <img src="img/6.png" alt="Mockup du site">
+                        <a href="https://ambremd.github.io/maquette-B1-ambre/" target="_blank">https://ambremd.github.io/maquette-B1-ambre/</a>
+                        <p class="type">HTML/CSS</p>
+                        <p>📝 Description<br>
+                            Projet réalisé en cours d’Intégration Web en 1ère année. L'objectif principal était de concevoir une one page identique a la maquette en utilisant les compétences acquise en cours.
+                            <br><br>
+                            🎯 Objectifs du projet
+                            <br>
+                            -Fidélité à la maquette<br>
+                            -Code HTML & CSS<br>
+                            <br><br>
+                            ⚠️ Le projet n'est pas responsive</p>
+                    </div>
+ 
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <footer>
+            <img src="./img/Logo-blanc-complet.png" alt="Logo AMD" class="logo-footer">
+            
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./moi.html">À propos de moi</a></li>
+                    <li><a href="./projet.html">Mes projets</a></li>
+                    <li><a href="./contact.html">Me contacter</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <span>Suivez-moi</span>
+                <div>
+                    <a href="https://github.com/Ambremd" target="_blank"><img  src="icone/github-blanc.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ambermercier-dalmasso" target="_blank"><img  src="icone/linkedin-blanc.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+
+    <script defer src="script.js"></script>
+</body>
+</html>

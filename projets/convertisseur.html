@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="../image/png" href="../img/logo.png">
+    <link rel="stylesheet" type="text/css" href="convertisseur.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../moi.html">À propos</a></li>
+                <li><a href="../projet.html">Projets</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav">
+            <a href="#" id="close-menu" class="close-btn">&times;</a>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../moi.html">À propos</a></li>
+                <li><a href="../projet.html">Projets</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banniere">
+        <a href="https://convertisseur-jsx.vercel.app/" target="_blank" class="banniere-link">
+            <div class="conteneur-banniere">
+                <img src="../img/page projet/3.png" alt="photo pour banniere" class="banniere-image">
+            </div>
+        </a>
+    </section>
+
+    <section class="projet">
+        <p class="info"><a href="../projet.html"> JavaScript / JSX </a> - projet de cours</p>
+        <h1>Convertisseur de prix, dollard en euros</h1>
+    
+        <div class="contenu">
+            <div class="texte">
+                
+                <h2>Contexte</h2>
+            <ul>
+                <li>Projet réalisé en solo dans le cadre d’un TP de Développement front en 2ᵉ année de Bachelor Web & Multimédia.</li>
+                <li>Durée : 1 heure</li>
+                <li>Objectifs : Apprendre à développer une fonctionnalité simple en JavaScript, puis reproduire cette fonctionnalité en JSX pour comprendre la transition entre ces deux langages.</li>
+                <li>Contrainte : Suivre les consignes données par le formateur pour réaliser la fonctionnalité du plus simple au plus complexe.</li>
+            </ul>
+
+            <h2>Problématique</h2>
+            <p>Comment développer une fonctionnalité de conversion de prix en respectant des consignes et en utilisant JavaScript ?</p>
+            <p>Comment exploiter les bases du JavaScript pour créer une fonctionnalité interactive, puis reproduire cette logique en JSX ?</p>
+    
+            <h2>Méthodologie</h2>
+            <ul>
+                <li>Reprise des bases de JavaScript vues l'année précédente.</li>
+                <li>Réalisation de la fonctionnalité étape par étape : formulaire simple, ajout de boutons, gestion des événements, conversion de devises, suppression de contenu.</li>
+                <li>Suivi des consignes pour reproduire chaque étape en JSX avec l’aide du formateur.</li>
+                <li>Utilisation de Vite pour la configuration et le développement du projet.</li>
+            </ul>
+
+            <h2>Outils utilisés</h2>
+            <ul>
+                <li>Visual Studio Code pour l’écriture du code.</li>
+                <li>Vite pour l’environnement de développement.</li>
+            </ul>
+                
+    
+                <h2>Langages utilisés</h2>
+    
+                <div class="code">
+                    <div>
+                        <div class="icone">
+                            <h4>JavaScript</h4>
+                            <img src="../icone/Js.png" alt="JS">
+                        </div>
+                        <pre>
+const Boutons = document.createElement("div");
+
+const bouttonPlus = document.createElement("button");
+bouttonPlus.innerText ='+1';
+bouttonPlus.addEventListener('click', function() {
+    euro.value = parseInt(euro.value) + 1;
+    dollard.innerText = "Prix en dollard :" + (parseInt(euro.value) *1.05).toFixed(2);
+})
+
+const bouttonMoins = document.createElement("button");
+bouttonMoins.innerText ='-1';
+bouttonMoins.addEventListener('click', function() {
+    euro.value = parseInt(euro.value) - 1;
+    dollard.innerText = "Prix en dollard :" + (parseInt(euro.value) *1.05).toFixed(2);
+})
+
+document.body.appendChild(Boutons);
+Boutons.appendChild(bouttonMoins);
+Boutons.appendChild(bouttonPlus);
+                        </pre>
+                    </div>
+                    <div>
+                        <div class="icone">
+                            <h4>JSX</h4>
+                            <img src="../icone/Jsx.png" alt="JSX">
+                        </div>
+                        <pre>
+&lt;div&gt;
+&lt;button style={{ backgroundColor: 'red'}} onClick={handleClick}&gt;- 1&lt;button&gt;
+&lt;button style={{ backgroundColor: 'green'}} onClick={handleClickoff}&gt;+ 1&lt;button&gt;
+&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+    
+                <h2>Compétences mobilisées</h2>
+                <p><strong>Hard skills :</strong> 
+                   <ul>
+                    <li>Développement en JavaScript </li>
+                    <li>Utilisation de JSX</li> 
+                    <li>Gestion des événements</li>
+                    </ul> 
+                <p><strong>Soft skills :</strong> 
+                    <ul>
+                        <li>L’autonomie</li>
+                        <li>La gestion du temps </li>
+                        <li>Capacité d’apprentissage</li>
+                    </ul>
+                <h2>Résultats obtenus</h2>
+                <p>Fonctionnalité réalisée avec succès en JavaScript, puis reproduite en JSX. Le projet respecte les consignes données par le formateur.</p>
+                <p>Ce projet m’a permis de consolider mes bases en JavaScript, de découvrir l’environnement Vite et d'apprendre les premières notions de JSX.</p>
+    
+                <h2>Démonstration</h2>
+                <div class="media">
+                    <div class="media-item">
+                        <video width="100%" controls>
+                            <source src="../img/page projet/Enregistrement convertisseur.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Quand le nombre est égale à 42 le contenu de la page disparaît</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../img/page projet/Capture d’écran convertisseur.jpg" alt="Démonstration">
+                        <p>Quand le prix en dollar dépasse 100 celui-ci devient rouge</p>
+                    </div>
+                </div>
+    
+                <h2>Axes d’amélioration</h2>
+                <p>Approfondir les fonctionnalités de JSX pour développer des projets plus complexes.</p>
+                <p>Améliorer la gestion des événements pour rendre l'application plus interactive.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="buttons">
+        <a href="https://ambremd.github.io/maquette-B2-Ambre/index.html" class="btn site" target="_blank">Site</a>
+        <a href="https://github.com/Ambremd/maquette-B2-Ambre" class="btn github" target="_blank">GitHub</a>
+    </div>
+
+    <section class="footer">
+        <footer>
+            <img src="../img/Logo-blanc-complet.png" alt="Logo AMD" class="logo-footer">
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../moi.html">À propos de moi</a></li>
+                    <li><a href="../projet.html">Mes projets</a></li>
+                    <li><a href="../contact.html">Me contacter</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <span>Suivez-moi</span>
+                <div>
+                    <a href="https://github.com/Ambremd" target="_blank"><img  src="../icone/github-blanc.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ambermercier-dalmasso" target="_blank"><img  src="../icone/linkedin-blanc.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    
+    <script defer src="../script.js"></script>
+</body>
+</html>

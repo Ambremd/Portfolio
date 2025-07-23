@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="../image/png" href="../img/logo.png">
+    <link rel="stylesheet" type="text/css" href="vatanen.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../moi.html">À propos</a></li>
+                <li><a href="../projet.html">Projets</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="mobile-menu" class="mobile-nav">
+            <a href="#" id="close-menu" class="close-btn">&times;</a>
+            <ul>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../moi.html">À propos</a></li>
+                <li><a href="../projet.html">Projets</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="banniere">
+        <a href="https://ambremd.github.io/maquette-B2-Ambre/index.html" target="_blank" class="banniere-link">
+            <div class="conteneur-banniere">
+                <img src="../img/page projet/1.png" alt="photo pour banniere" class="banniere-image">
+            </div>
+        </a>
+    </section>
+
+    <section class="projet">
+        <p class="info"><a href="../projet.html"> HTML / CSS </a> - projet de cours</p>
+        <h1>Développement d’un site à partir d’une maquette pour un constructeur de maison scandinave</h1>
+    
+        <div class="contenu">
+            <div class="image">
+                <img src="../img/page projet/maquette vatanen decomposition.png" alt="Maquette du site Vatanen">
+                <p><i>Maquette initiale avec découpage</i></p>
+            </div>
+    
+            <div class="texte">
+                <h3>Contexte</h3>
+                <p>- Projet réalisé en solo dans le cadre d’un exercice noté en 2ᵉ année de Bachelor Web & Multimédia.</p>
+                <p>- Durée : 1 mois.</p>
+                <p>- Objectifs : Mettre en pratique le responsive design, Git, GitHub et LESS.</p>
+                <p>- Contrainte : Reproduire strictement une maquette initiale en utilisant uniquement HTML et CSS tout en respectant des critères d’évaluation.</p>
+    
+                <h3>Problématique</h3>
+                <p>Transformer une maquette graphique en un site fonctionnel.</p>
+                <p>Assurer la fidélité visuelle à la maquette tout en rendant le site adaptable à différents appareils (responsive design).</p>
+    
+                <h3>Méthodologie</h3>
+                <ul>
+                    <li>Choix de la maquette sur Pinterest</li>
+                    <li>Découpage de la maquette en sections</li>
+                    <li>Structure HTML</li>
+                    <li>Stylisation CSS</li>
+                    <li>Responsive design</li>
+                    <li>Intégration LESS</li>
+                    <li>Utilisation de Git et GitHub</li>
+                </ul>
+    
+                <h3>Outils utilisés</h3>
+                <ul>
+                    <li>Visual Studio Code (écriture du code)</li>
+                    <li>Git et GitHub (stockage et partage)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projet">
+        <div class="langage">
+            <h3>Langages utilisés</h3> 
+                <div class="code">
+                    <h4>Code HTML</h4>
+                    <img src="../icone/Html.png" alt="HTML">
+                </div>
+                <pre>
+                    
+&lt;div class="maison" id="section-maison"&gt;
+    &lt;a href="maison1.html" class="maison1"&gt;
+        &lt;div class="overlay"&gt;&lt;/div&gt;
+        &lt;h2 class="home"&gt;01&lt;/h2&gt;
+        &lt;h3 class="bluesky"&gt;THE BLUE SKY HOME&lt;/h3&gt;
+        &lt;p&gt;Refuge Scandinave&lt;/p&gt;
+        &lt;img src="./img/MaisonScandinave.jpeg" alt="Maison"&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+                    
+                </pre>
+            
+                <div class="code">
+                    <h4>Code CSS</h4>
+                    <img src="../icone/CSS 3.png" alt="CSS">
+                </div>
+                <pre>
+.maison{
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    }
+    
+    .maison1, .maison2, .maison3, .maison4{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .maison1:hover, .maison2:hover, .maison3:hover, .maison4:hover {
+        transform: scale(1.02);
+        z-index: 5;
+    }
+    .maison4:hover{
+        margin-right: 4px;
+    }
+    
+    /* filtre noir sur image*/
+    .overlay {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 0; 
+    }
+                </pre>
+
+                    <div class="code">
+                        <h4>Expérimentation sur LESS</h4>
+                        <img src="../icone/fluent-mdl2_file-less.png" alt="LESS">
+                    </div>
+                    <pre>
+body {
+    font-family: RobotoR;
+    margin: 0;
+    background-color: @noir;
+    color: @blanc;
+    }
+    
+    h1, h2, h3, h4 {
+    font-family: "RobotoB";
+    }
+    
+    a:-webkit-any-link {
+    text-decoration: none;
+    }
+                    </pre>
+        </div>
+    </section>
+    <section class="projet">
+        <div class="contenu2">
+            <h3>Compétences mobilisées</h3>
+            <p>
+                <strong>Hard skills :</strong> <br>
+                - Intégration web, <br>
+                - Responsive design, <br>
+                - Animations CSS.
+            </p>
+            <p>
+                <strong>Soft skills :</strong> <br>
+                - l’autonomie, <br>
+                - la gestion du temps, <br>
+                - le sens du détail.
+            </p>
+        
+            <h3>Résultats obtenus</h3>
+            <p>
+                Le projet a respecté la maquette initiale tout en intégrant les critères demandés. <br>
+                Ce projet a été noté <strong>17,75 sur 20.</strong>
+            </p>
+        
+            <p>
+                Ce projet m’a permis de découvrir l’utilisation de Git, que je ne connaissais pas auparavant, et d’apprendre à exploiter GitHub, une plateforme que je possédais mais que je n’avais encore jamais utilisée. J’ai également appris à mettre en place de nouveaux effets et à explorer de nouvelles techniques pour réaliser certains éléments, comme l’ajout d’une loupe ou l’intégration de vidéos.
+            </p>
+
+            <img src="../img/page projet/SEO vatanen.PNG" alt="résultat SEO" class="seo">
+        
+            <h3>Axes d’amélioration</h3>
+            <ul>
+                <li>Centralisation des styles dans un fichier CSS partagé pour éviter les doublons.</li>
+                <li>Personnalisation des titres et méta-descriptions pour améliorer le SEO.</li>
+                <li>Agrandissement du menu mobile pour une meilleure lisibilité.</li>
+                <li>Approfondissement de l’utilisation de LESS pour une implémentation complète.</li>
+            </ul>
+        
+            <div class="avis-formateur">
+                <h3>Avis du formateur</h3>
+                <blockquote>"Excellent travail avec un rendu très proche de la maquette"</blockquote>
+                <span>— Jean CARALY, Formateur HTML / CSS</span>
+            </div>
+        
+            <div class="liens-projet">
+                <!-- <h3>Liens du projet</h3>
+                <a href="https://ambremd.github.io/maquette-B2-Ambre/index.html" target="_blank">
+                </a>
+                <a href="https://github.com/Ambremd/maquette-B2-Ambre" target="_blank">
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+    <div class="buttons">
+        <a href="https://ambremd.github.io/maquette-B2-Ambre/index.html" class="btn site" target="_blank">Site</a>
+        <a href="https://github.com/Ambremd/maquette-B2-Ambre" class="btn github" target="_blank">GitHub</a>
+    </div>
+
+    <section class="footer">
+        <footer>
+            <img src="../img/Logo-blanc-complet.png" alt="Logo AMD" class="logo-footer">
+            
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../moi.html">À propos de moi</a></li>
+                    <li><a href="../projet.html">Mes projets</a></li>
+                    <li><a href="../contact.html">Me contacter</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-media">
+                <span>Suivez-moi</span>
+                <div>
+                    <a href="https://github.com/Ambremd" target="_blank"><img  src="../icone/github-blanc.png" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ambermercier-dalmasso" target="_blank"><img  src="../icone/linkedin-blanc.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script defer src="../script.js"></script>
+</body>
+</html>
+
+    
