@@ -452,6 +452,9 @@ body {
         .carte h3, .carte p, .carte button, .cartes {
             font-size: 0.7rem;
         }
+        .carte{
+            width: 70%;
+        }
     }
 }
 
@@ -556,7 +559,40 @@ body {
     background-color: #c79b47;
 }
 
-/* Flèche à droite */
+.cartes-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.right-arrow, .left-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Flèche droite à droite */
+.right-arrow {
+    right: 10px;
+}
+
+/* Flèche gauche à gauche */
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+    color: #7089BD;
+}
+
+/* Flèche à droite
 .right-arrow {
     position: absolute;
     right: 10px;
@@ -572,7 +608,7 @@ body {
 
 .right-arrow:hover {
     color: #7089BD;
-}
+} */
 
 
 /* Responsive pour tablette */
