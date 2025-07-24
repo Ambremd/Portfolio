@@ -271,7 +271,7 @@ p {
     }
 
     h2 {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     p, .list_projet a {
@@ -297,7 +297,7 @@ p {
     }
 
     p, .list_projet a, .type {
-        font-size: 2.1vw;
+        font-size: 2.5vw;
     }
 }
 
